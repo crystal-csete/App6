@@ -13,7 +13,8 @@ function App() {
       <Nav />
       <header className='appHeader'>
         <h1>
-          It's time to take notes for later!<i class='fas fa-clock fa-lg'></i>{" "}
+          It's time to take notes for later!
+          <i className='fas fa-clock fa-lg'></i>{" "}
         </h1>
       </header>
       <section>

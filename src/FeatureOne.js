@@ -22,7 +22,7 @@ const FeatureOne = () => {
           {/* div for image side of feat one */}
           <div className='featOneBlankDiv'>
             <div className='featOneImgDiv'>
-              <i class='fas fa-sticky-note'></i>
+              <i className='fas fa-sticky-note'></i>
             </div>
           </div>
         </div>
