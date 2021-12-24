@@ -29,7 +29,7 @@ function Inventory() {
   console.log(products);
 
   return (
-    <div className='invenDiv'>
+    <div className='invenDiv' id='inventory'>
       <h1 className='invenTitle'>Your Inventory</h1>
       <div className='invenWrapperDiv'>
         <div className='invenContentDiv'>
