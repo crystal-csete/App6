@@ -1,38 +1,23 @@
 /** @format */
 
 import "./App.css";
-import Nav from "./Nav";
-import FeatureOne from "./FeatureOne";
-import TodoList from "./components/TodoList";
-import Inventory from "./components/Inventory";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Nav from "./components/Nav";
+import Home from "./components/Home";
 import Supplies from "./components/Supplies";
+import Inventory from "./components/Inventory";
 
 function App() {
   return (
-    <div className='appContainer'>
+    <Router>
       <Nav />
-      <header className='appHeader'>
-        <h1>
-          It's time to take notes for later!
-          <i className='fas fa-clock fa-lg'></i>{" "}
-        </h1>
-      </header>
-      <section>
-        <FeatureOne />
-      </section>
-
-      <section>
-        <TodoList />
-      </section>
-
-      <section>
-        <Inventory />
-      </section>
-
-      <section>
-        <Supplies />
-      </section>
-    </div>
+      <Routes>
+        <Route exact path='/home' element={<Home />} />
+        <Route path='/inventory' element={<Inventory />} />
+        <Route path='/supplies' element={<Supplies />} />
+      </Routes>
+    </Router>
   );
 }
 

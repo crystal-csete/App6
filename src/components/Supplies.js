@@ -26,7 +26,7 @@ function Supplies() {
   console.log(companies);
 
   return (
-    <div className='suppDiv'>
+    <div className='suppDiv' id='supplies'>
       <h1 className='suppTitle'>Where do you get your supplies?</h1>
       <p className='suppText'>
         Below you can find the places you order from, for a reference.
